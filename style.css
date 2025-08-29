@@ -7,7 +7,7 @@
 body{
     width: 100%;
     min-height: 100vh;
-    background: #f8f8f8;
+    background: #161616;
     font-family: sans-serif;
 }
 .container{
@@ -19,4 +19,46 @@ body{
     background-repeat: no-repeat;
     text-align: center;
     color: #f8f8f8;
+}
+.container h2{
+    font-size: 36px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+.container p{
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+.searchBox{
+    max-width: 600px;
+    margin: 15px auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.searchBox input{
+    padding: 12px;
+    width: 70%;
+    border-radius: 15px 0 0 5px;
+    outline: 0;
+    border: 1px solid rgb(228, 69, 69);
+    font-size: 1rem;
+}
+.searchBox button{
+    padding: 12px 20px;
+    background: rgb(240, 72, 72);
+    border: 0;
+    outline: none;
+    border: 1px solid rgb(221, 59, 59);
+    font-size: 1rem;
+    color: #fff;
+    font-weight: 600;
+    border-radius: 0px 5px 5px 0px;
+}
+.notFound{
+    text-align: center;
+    margin-top: 30px;
+    font-size: 20px;
+    color: #fff;
 }
