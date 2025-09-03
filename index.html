@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Recipe Finder</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="hero">
+    <div class="overlay"></div>
+    <div class="hero-content">
+      <h1>🍲 Recipe Finder</h1>
+      <p>Discover delicious recipes from around the world</p>
+      <div class="searchBox">
+        <input type="text" placeholder="Search your favorite dish..." id="searchInput">
+        <button onclick="searchRecipes()">🔍 Search</button>
+      </div>
+    </div>
+  </header>
+  <main>
+    <div class="recipes" id="recipes"></div>
+    <div class="notFound" id="notFound">Search for your favorite recipes!</div>
+  </main>
+
+  <div class="popup-card" id="popupCard">
+    <button class="close-btn" onclick="closeRecipe()">✖</button>
+    <img id="recipeImg" alt="Recipe Image">
+    <h3 id="recipeTitle"></h3>
+    <p><strong>Category:</strong> <span id="recipeCategory"></span></p>
+    <p><strong>Area:</strong> <span id="recipeArea"></span></p>
+    <h4>Instructions</h4>
+    <p id="recipeDetails"></p>
+    <a id="recipeVideo" href="#" target="_blank">▶ Watch Video</a>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
+

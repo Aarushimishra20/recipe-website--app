@@ -1,3 +1,4 @@
+
 function searchRecipes() {
   const searchInput = document.getElementById('searchInput').value.trim();
   const recipeDiv = document.getElementById('recipes');
@@ -64,3 +65,4 @@ function viewRecipes(mealId) {
 function closeRecipe() {
   document.getElementById('popupCard').style.display = 'none';
 }
+
